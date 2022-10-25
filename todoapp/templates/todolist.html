@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My To Do List App</title>
+    <title> To Do List App</title>
 </head>
-     <h1> My to do list app </h1>
+     <h1> To do list app </h1>
 
-    <form action="/addTodoItem/" method = "post">{% csrf_token %}
+    <form action="/api/v1/addTodoItem/" method = "post">{% csrf_token %}
     <input type="text" name="content">
     <input type="submit" value="Add Todo Item">
     </form>
